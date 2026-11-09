@@ -1,0 +1,363 @@
+/* Paleta de culori & texturi Codédex Neo-Arcade */
+:root {
+    --bg-dark: #0d0f17;
+    --card-bg: #161b26;
+    --border-color: #2b3548;
+    --text-white: #f8fafc;
+    --text-muted: #94a3b8;
+    
+    /* Culori specifice temei Codédex */
+    --accent-yellow: #ffe600;
+    --accent-pink: #ff3388;
+    --accent-cyan: #00e5ff;
+    --accent-green: #00ff88;
+
+    /* Umbre dure tip neo-brutalism */
+    --pixel-shadow: 4px 4px 0px #000000;
+    --card-shadow: 5px 5px 0px #ffe600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    /* Pattern de tip grila (grid lines) pe fundal */
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 32px 32px;
+    color: var(--text-white);
+    font-family: 'Fira Code', monospace;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+/* Header & Navigare */
+header {
+    background-color: var(--bg-dark);
+    border-bottom: 2px solid var(--border-color);
+    padding: 18px 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 14px;
+    color: var(--accent-yellow);
+    letter-spacing: -0.5px;
+}
+
+.pixel-star {
+    color: var(--accent-pink);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 2px;
+    transition: all 0.15s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--text-white);
+    background-color: #1e2638;
+}
+
+.lang-pill a {
+    background-color: var(--accent-yellow);
+    color: #000000 !important;
+    font-weight: 700;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.lang-pill a:hover {
+    background-color: #fff;
+}
+
+/* Hero Section */
+.hero-block {
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.8);
+    padding: 45px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent-green);
+    background-color: rgba(0, 255, 136, 0.08);
+    border: 1px solid var(--accent-green);
+    padding: 3px 10px;
+    margin-bottom: 20px;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    background-color: var(--accent-green);
+    display: inline-block;
+}
+
+.hero-info h2 {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    color: var(--text-white);
+}
+
+.hero-info p {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 28px;
+    max-width: 500px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+}
+
+/* Butoane Neo-Brutalist / Arcade */
+.btn {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 22px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn-pixel {
+    background-color: var(--accent-yellow);
+    color: #000000;
+    border: 2px solid #000000;
+    box-shadow: var(--pixel-shadow);
+}
+
+.btn-pixel:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000000;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-white);
+    border: 2px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    border-color: var(--text-white);
+    background-color: #1e2638;
+}
+
+/* Rama foto pixelata */
+.hero-avatar {
+    flex-shrink: 0;
+}
+
+.avatar-frame {
+    border: 2px solid var(--border-color);
+    background-color: #0d0f17;
+    padding: 10px;
+    box-shadow: var(--pixel-shadow);
+    text-align: center;
+}
+
+.avatar-frame img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--border-color);
+}
+
+.avatar-tag {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 8px;
+    color: var(--accent-yellow);
+    margin-top: 10px;
+}
+
+/* Quests / Cards Section */
+.quests-section {
+    margin: 50px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.section-header h3 {
+    font-size: 15px;
+    color: var(--text-white);
+    letter-spacing: 1px;
+}
+
+.count-badge {
+    font-size: 11px;
+    background-color: #1e2638;
+    color: var(--text-muted);
+    padding: 3px 8px;
+    border: 1px solid var(--border-color);
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+.pixel-card {
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    padding: 24px;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pixel-card:hover {
+    border-color: var(--accent-yellow);
+    box-shadow: var(--card-shadow);
+    transform: translate(-3px, -3px);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border: 1px solid;
+}
+
+.badge.yellow { color: var(--accent-yellow); border-color: var(--accent-yellow); }
+.badge.cyan   { color: var(--accent-cyan);   border-color: var(--accent-cyan); }
+.badge.pink   { color: var(--accent-pink);   border-color: var(--accent-pink); }
+
+.card-icon {
+    font-size: 18px;
+}
+
+.pixel-card h4 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: var(--text-white);
+}
+
+.pixel-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+}
+
+.card-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 14px;
+}
+
+.link-arrow {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.pixel-card:hover .link-arrow {
+    color: var(--accent-yellow);
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid var(--border-color);
+    background-color: var(--bg-dark);
+    padding: 24px 0;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+footer a {
+    color: var(--accent-yellow);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive pe telefon */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .hero-block {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

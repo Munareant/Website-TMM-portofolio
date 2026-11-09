@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Munăreanț // Dev Portfolio</title>
+    <!-- Import fonturi monospace retro/pixel-friendly din Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bara de sus / Header in stil consola arcade -->
+    <header>
+        <div class="container nav-bar">
+            <div class="logo">
+                <span class="pixel-star">★</span> DAN.DEV
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">// index</a></li>
+                    <li><a href="despre.html">// despre</a></li>
+                    <li><a href="proiecte.html">// proiecte</a></li>
+                    <li><a href="contact.html">// contact</a></li>
+                    <li class="lang-pill"><a href="en/index.html">EN:OFF</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section - Stil Fisa Jucator / Quest Log -->
+        <section class="hero-block">
+            <div class="hero-info">
+                <div class="status-badge">
+                    <span class="status-dot"></span> LVL.4 // TELECOM & DEV
+                </div>
+                <h2>Construiesc sisteme de la cabluri la cod.</h2>
+                <p>Student la Tehnologii și Sisteme de Telecomunicații. Explorez circuite, microcontrollere, rețele și aplicații interactive.</p>
+                <div class="hero-actions">
+                    <a href="proiecte.html" class="btn btn-pixel">START QUEST ➔</a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GITHUB PROFILE ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-avatar">
+                <div class="avatar-frame">
+                    <img src="profil.jpg" alt="Dan Munăreanț">
+                    <div class="avatar-tag">PLAYER_01</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sectiune Carduri - Quest Boards -->
+        <section class="quests-section">
+            <div class="section-header">
+                <h3>// CATEGORII PROIECTE</h3>
+                <span class="count-badge">3 ZONE</span>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <article class="pixel-card">
+                    <div class="card-top">
+                        <span class="badge yellow">TRACK 01</span>
+                        <span class="card-icon">⚡</span>
+                    </div>
+                    <h4>Dezvoltare Software</h4>
+                    <p>Aplicații orientate pe interfețe reactive, algoritmi de rutare, baze de date și procesare de date.</p>
+                    <div class="card-footer">
+                        <a href="proiecte.html#software" class="link-arrow">Deschide fișa &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="pixel-card">
+                    <div class="card-top">
+                        <span class="badge cyan">TRACK 02</span>
+                        <span class="card-icon">📟</span>
+                    </div>
+                    <h4>Hardware & Embedded</h4>
+                    <p>Circuite electronice, simulări de laborator, plăci de test și măsurători pe semnale de bandă largă.</p>
+                    <div class="card-footer">
+                        <a href="proiecte.html#hardware" class="link-arrow">Deschide fișa &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="pixel-card">
+                    <div class="card-top">
+                        <span class="badge pink">TRACK 03</span>
+                        <span class="card-icon">🌐</span>
+                    </div>
+                    <h4>Rețele & Infrastructură</h4>
+                    <p>Topologii, comutație de pachete, analiză de protocoale și interconectări de stații de lucru.</p>
+                    <div class="card-footer">
+                        <a href="despre.html#retele" class="link-arrow">Deschide fișa &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Retro -->
+    <footer>
+        <div class="container footer-content">
+            <p>⌨ Realizat manual în HTML & CSS. Fără framework-uri.</p>
+            <p><a href="https://etti.upt.ro" target="_blank" rel="noopener noreferrer">UPT ETTI</a> // TIMIȘOARA 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>
